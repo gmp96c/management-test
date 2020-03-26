@@ -44,15 +44,16 @@ a{
 #boxes{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  box-sizing: border-box;
   grid-gap: 2.3rem;
   padding: .8rem;
-  box-sizing: border-box;
+  width:100%;
+  justify-content: center;
   @media (min-width: 2450px){
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
+  }
 @media (max-width: 425px){
     grid-template-columns: 1fr;
-    padding:5px;
 }
 }
 #Imgcontainer{
