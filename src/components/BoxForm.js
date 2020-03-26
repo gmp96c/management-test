@@ -17,13 +17,43 @@ border-radius: 3px;
 box-shadow: 6px 6px 13px -2px rgba(0,0,0,0.25);
 display:flex;
 flex-direction: column;
+
+background-image: url('https://i.imgur.com/Q8ECZEy.png');
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 #middle{
   flex-grow: 1;
 }
-@media(max-width: 400px){
+@media(max-width: 425px){
   overflow-x:scroll;
 }
-
+.bar{
+/* border: 2px solid #f5c242; */
+height: 3.5px;
+  border: 0;
+margin-bottom: 10px;
+width:150px;
+}
+.titlebar{
+  background:  #942228;
+  height:2.5rem;
+  margin-top:-5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.boxtitle{
+  width: 150px;
+  background-color: none;
+  height: auto;
+}
+.normalRow{
+  :hover{
+    background: #e8e8e8;
+  }
+}
 `;
 const useStyles = makeStyles({
   table: {
@@ -34,7 +64,10 @@ export const BoxForm = (props) => {
   const classes = useStyles();
   return (
     <BoxStyle>
-      <h4>{props.title}</h4>
+      <span className="titlebar">
+     <hr className="bar"></hr> <h4 className="boxtitle">{props.title}</h4><hr className="bar"></hr>
+     </span>
+
       <TableContainer id="middle">
         <Table className={classes.table} aria-label="simple-table">
           <TableHead>
@@ -43,7 +76,7 @@ export const BoxForm = (props) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow>
+            <TableRow className="normalRow">
               {props.data.map(el=>(<TableCell key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
             </TableRow>
           </TableBody>

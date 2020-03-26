@@ -10,6 +10,7 @@ font-size: 1rem;
 padding:5px;
 div{
 text-align: center;
+box-sizing:content-box;
 background: #942228;
 border: 1px solid #761b1f;
 border-radius: 3px;
@@ -20,19 +21,21 @@ width: 100%;
 display:flex;
 align-items:center;
 justify-content: center;
-:last-child{
-  border: 0;
-}
 :hover{
   color: #ffffff;
-  background: #bc2c33;
+  background: #f5c242;
+  border: 1px solid #dea50c;
+
   cursor:pointer;
   user-select: none;
   animation: highlight .1s;
 }
 @keyframes highlight{
-  from {background:#942228}
-  to  {background:#bc2c33}
+  from {border: 1px solid #761b1f;
+    background:#942228;}
+  to  {background: #f5c242;
+
+    border: 1px solid #dea50c;}
 }
 }
 `;
