@@ -68,7 +68,7 @@ a{
   margin:15px auto;
 border: 3px solid #942228;
 border-radius: 3px;
-box-shadow: 6px 6px 8px -2px rgba(0,0,0,0.45);
+box-shadow: 6px 6px 8px -2px rgba(0,0,0,0.25);
 max-width:300px;
 text-align:center;
 }
