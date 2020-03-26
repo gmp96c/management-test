@@ -8,6 +8,33 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import { Controls } from './Controls';
+
+export const BoxForm = (props) => {
+  const classes = useStyles();
+  return (
+    <BoxStyle>
+      <span className="titlebar">
+     <hr className="bar"></hr> <h4 className="boxtitle">{props.title}</h4><hr className="bar"></hr>
+     </span>
+
+      <TableContainer id="middle">
+        <Table className={classes.table} aria-label="simple-table">
+          <TableHead>
+            <TableRow>
+              {props.headers.map(el=><TableCell key={el}>{el}</TableCell>)}
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow className="normalRow">
+              {props.data.map(el=>(<TableCell key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+    {props.controls && <Controls options={props.controls}/>}
+    </BoxStyle>
+  )
+}
 const BoxStyle = styled.div`
 padding-top:3px;
 width: 100%;
@@ -60,29 +87,3 @@ const useStyles = makeStyles({
     minWidth: 350 ,
   },
 });
-export const BoxForm = (props) => {
-  const classes = useStyles();
-  return (
-    <BoxStyle>
-      <span className="titlebar">
-     <hr className="bar"></hr> <h4 className="boxtitle">{props.title}</h4><hr className="bar"></hr>
-     </span>
-
-      <TableContainer id="middle">
-        <Table className={classes.table} aria-label="simple-table">
-          <TableHead>
-            <TableRow>
-              {props.headers.map(el=><TableCell key={el}>{el}</TableCell>)}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow className="normalRow">
-              {props.data.map(el=>(<TableCell key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
-    {props.controls && <Controls options={props.controls}/>}
-    </BoxStyle>
-  )
-}

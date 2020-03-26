@@ -4,7 +4,6 @@ import './App.css';
 import styled from 'styled-components';
 import logo from './gate_sentry_main_logo_400.png'
 import { BoxForm } from './components/BoxForm';
-
 const AppStyle = styled.main`
 width: 70%;
 background-color: #f8f8f8;
@@ -68,11 +67,13 @@ a{
 }
 #extra{
   margin:15px auto;
-border: 3px solid ;
-border-radius: 3px;
 box-shadow: 6px 6px 8px -2px rgba(0,0,0,0.25);
 max-width:300px;
 text-align:center;
+border: 3px solid #942228;
+border-radius: 3px;
+padding-top:3px;
+
 p{
   font-size: .8rem;
 }
@@ -100,6 +101,7 @@ height: 3.5px;
   border: 0;
   min-width: 80%;
 margin-bottom: 10px;
+
 
 }
 `;
@@ -135,3 +137,4 @@ function App() {
 }
 
 ReactDOM.render(<App/>,document.querySelector('#root'));
+
