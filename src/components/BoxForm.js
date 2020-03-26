@@ -44,7 +44,6 @@ border-radius: 3px;
 box-shadow: 6px 6px 13px -2px rgba(0,0,0,0.25);
 display:flex;
 flex-direction: column;
-
 background-image: url('https://i.imgur.com/Q8ECZEy.png');
 background-attachment: fixed;
   background-position: center;
