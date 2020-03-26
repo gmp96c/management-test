@@ -72,13 +72,11 @@ box-shadow: 6px 6px 8px -2px rgba(0,0,0,0.25);
 max-width:300px;
 text-align:center;
 p{
-  margin-top: 0;
   font-size: .8rem;
 }
 }
 #keyHeader{
   font-size:1.1rem;
-  margin-bottom: .6rem;
 }
 a{
   :hover{
