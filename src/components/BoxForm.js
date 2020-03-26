@@ -7,9 +7,9 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 import { Controls } from './Controls';
 const BoxStyle = styled.div`
+padding-top:3px;
 width: 100%;
 height: 500px;
 border: 3px solid #942228;
@@ -39,12 +39,12 @@ export const BoxForm = (props) => {
         <Table className={classes.table} aria-label="simple-table">
           <TableHead>
             <TableRow>
-              {props.headers.map(el=><TableCell>{el}</TableCell>)}
+              {props.headers.map(el=><TableCell key={el}>{el}</TableCell>)}
             </TableRow>
           </TableHead>
           <TableBody>
             <TableRow>
-              {props.data.map(el=>(<TableCell>{typeof el == "string" ? el : el}</TableCell>))}
+              {props.data.map(el=>(<TableCell key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
             </TableRow>
           </TableBody>
         </Table>

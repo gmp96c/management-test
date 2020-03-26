@@ -40,7 +40,7 @@ export const Controls = ({options}) => {
   return (
     <ControlStyle>
       {options.map(el=>(
-        <div>{el}</div>
+        <div key={el} >{el}</div>
       ))}
     </ControlStyle>
   )

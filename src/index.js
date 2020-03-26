@@ -71,12 +71,16 @@ border-radius: 3px;
 box-shadow: 6px 6px 8px -2px rgba(0,0,0,0.25);
 max-width:300px;
 text-align:center;
+p{
+  font-size: .8rem;
+}
 }
 #keyHeader{
   font-size:1.1rem;
 }
 a{
   :hover{
+    color:inherit;
     cursor:pointer;
     text-decoration: underline;
   }
@@ -93,11 +97,11 @@ function App() {
         <span>
           <h2>Demo Name</h2>
           <h3>Demo Address</h3>
-          <a>Logout</a>
+          <a href="/">Logout</a>
         </span>
       </header>
       <div id="boxes">
-        {dummyData.map(el=>(<BoxForm title={el[0]} headers={el[1]} data={el[2]} controls={el[3]} />))}
+        {dummyData.map(el=>(<BoxForm key={el[0]} title={el[0]} headers={el[1]} data={el[2]} controls={el[3]} />))}
       </div>
       <div id="extra">
         <h4 id="keyHeader">
