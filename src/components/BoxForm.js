@@ -53,9 +53,9 @@ background-attachment: fixed;
 #middle{
   flex-grow: 1;
 }
-@media(max-width: 425px){
+@media(max-width: 500px){
   overflow-x:scroll;
-  background-color: rgba(255,255,255,1);
+  background-color: #f8f8f8;
   background-image:none;
 }
 .bar{

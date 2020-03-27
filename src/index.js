@@ -23,8 +23,8 @@ background-attachment: fixed;
   width:100%;
 
 }
-@media(min-width: 425px){
-
+@media(min-width: 500px){
+background-image: none;
 background-color: #f8f8f8;
 }
 img{
@@ -62,7 +62,7 @@ a{
   @media (min-width: 2450px){
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
-@media (max-width: 425px){
+@media (max-width: 500px){
     grid-template-columns: 1fr;
 }
 }
