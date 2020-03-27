@@ -14,7 +14,7 @@ export const BoxForm = (props) => {
   return (
     <BoxStyle>
       <span className="titlebar">
-     <hr className="bar"></hr> <h4 className="boxtitle">{props.title}</h4><hr className="bar"></hr>
+     <h4 className="boxtitle">{props.title}</h4>
      </span>
 
       <TableContainer id="middle">
@@ -49,11 +49,14 @@ background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 #middle{
   flex-grow: 1;
 }
 @media(max-width: 425px){
   overflow-x:scroll;
+  background-color: rgba(255,255,255,1);
+  background-image:none;
 }
 .bar{
 /* border: 2px solid #f5c242; */

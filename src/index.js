@@ -6,7 +6,12 @@ import logo from './gate_sentry_main_logo_400.png'
 import { BoxForm } from './components/BoxForm';
 const AppStyle = styled.main`
 width: 70%;
-background-color: #f8f8f8;
+
+background-image: url('https://i.imgur.com/Q8ECZEy.png');
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 @media(max-width: 1920px){
   width:85%;
@@ -16,6 +21,11 @@ background-color: #f8f8f8;
 }
 @media(max-width: 500px){
   width:100%;
+
+}
+@media(min-width: 425px){
+
+background-color: #f8f8f8;
 }
 img{
   height:8rem;
