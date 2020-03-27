@@ -24,7 +24,7 @@ justify-content: center;
 :hover{
   color: #ffffff;
   background: #f5c242;
-  border: 1px solid #dea50c;
+  border: 1px solid #f5c242;
 
   cursor:pointer;
   user-select: none;
