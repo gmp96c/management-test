@@ -25,7 +25,7 @@ background-attachment: fixed;
 }
 @media(min-width: 500px){
 background-image: none;
-background-color: #f8f8f8;
+background-color: #f4f4f4;
 }
 img{
   height:8rem;
@@ -83,7 +83,7 @@ text-align:center;
 border: 3px solid #942228;
 border-radius: 3px;
 padding-top:3px;
-
+background: #ffffff;
 p{
   font-size: .8rem;
 }

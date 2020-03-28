@@ -8,6 +8,8 @@ width: 100%;
 color: white;
 font-size: 1rem;
 padding:5px;
+margin-top: 10px;
+
 div{
 text-align: center;
 box-sizing:content-box;
@@ -25,7 +27,6 @@ justify-content: center;
   color: #ffffff;
   background: #f5c242;
   border: 1px solid #f5c242;
-
   cursor:pointer;
   user-select: none;
   animation: highlight .1s;

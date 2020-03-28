@@ -18,15 +18,45 @@ export const BoxForm = (props) => {
      </span>
 
       <TableContainer id="middle">
-        <Table className={classes.table} aria-label="simple-table">
+        <Table stickyHeader className={classes.table} aria-label="simple-table">
           <TableHead>
             <TableRow>
-              {props.headers.map(el=><TableCell key={el}>{el}</TableCell>)}
+              {props.headers.map((el,i)=><TableCell align={i!==0?"right":"left"} className="headerText" key={el}>{el}</TableCell>)}
             </TableRow>
           </TableHead>
           <TableBody>
             <TableRow className="normalRow">
-              {props.data.map(el=>(<TableCell key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+              {props.data.map((el,i)=>(<TableCell align={i!=0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
+            </TableRow>
+            <TableRow className="normalRow">
+              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
             </TableRow>
           </TableBody>
         </Table>
@@ -36,7 +66,7 @@ export const BoxForm = (props) => {
   )
 }
 const BoxStyle = styled.div`
-padding-top:3px;
+padding-top:5px;
 width: 100%;
 height: 500px;
 border: 3px solid #942228;
@@ -44,12 +74,24 @@ border-radius: 3px;
 box-shadow: 6px 6px 13px -2px rgba(0,0,0,0.25);
 display:flex;
 flex-direction: column;
-background-image: url('https://i.imgur.com/Q8ECZEy.png');
+/* background-image: url('https://i.imgur.com/Q8ECZEy.png');
 background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+background:#ffffff;
+*{
+  overflow-y:visible;
+}
+TableHead{
+  background:#f3f3f3;
+}
+.headerText{
 
+  padding-bottom:.5rem;
+  padding-top:.5rem;
+  font-weight: bold;
+}
 #middle{
   flex-grow: 1;
 }
@@ -67,8 +109,11 @@ width:150px;
 }
 .titlebar{
   background:  #942228;
-  height:2.5rem;
+  height:auto;
   margin-top:-5px;
+  padding:4px;
+  padding-bottom: 7px;
+/////
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -76,7 +121,9 @@ width:150px;
 .boxtitle{
   width: 150px;
   background-color: none;
-  height: auto;
+  position: relative;
+  box-sizing:border-box;
+  height: 2rem;
 }
 .normalRow{
   :hover{
