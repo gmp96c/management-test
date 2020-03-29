@@ -70,7 +70,7 @@ export const BoxForm = (props) => {
 const BoxStyle = styled.div`
 padding-top:5px;
 width: 100%;
-height: 500px;
+height: 550px;
 border: 3px solid #942228;
 border-radius: 3px;
 box-shadow: 6px 6px 13px -2px rgba(0,0,0,0.25);
