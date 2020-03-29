@@ -9,6 +9,7 @@ color: white;
 font-size: 1rem;
 padding:5px;
 margin-top: 10px;
+margin-bottom: 5px;
 
 div{
 text-align: center;

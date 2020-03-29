@@ -82,7 +82,7 @@ background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 *{
-  overflow-y:visible;
+  overflow-y:hidden;
 }
 TableHead{
   background:#f3f3f3;
