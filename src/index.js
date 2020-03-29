@@ -105,7 +105,7 @@ a{
   display: none;
 }
 height: 3.5px;
-  background: linear-gradient(90deg, white, #f5c242 50%, white);
+  background: linear-gradient(90deg, #f4f4f4, #f5c242 50%, #f4f4f4);
   margin: 0 150px;
   align-self: center;
   border: 0;
