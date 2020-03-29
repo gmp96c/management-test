@@ -77,8 +77,6 @@ TableHead{
 }
 @media(max-width: 500px){
   overflow-x:scroll;
-  background-color: #f8f8f8;
-  background-image:none;
 }
 .bar{
 /* border: 2px solid #f5c242; */
