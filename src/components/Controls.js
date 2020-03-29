@@ -20,6 +20,7 @@ padding: 3px;
 margin: 0 3px;
 width: 100%;
 /* border-right: 1px solid #f5c242; */
+height:auto;
 display:flex;
 align-items:center;
 justify-content: center;
