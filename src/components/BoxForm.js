@@ -39,27 +39,6 @@ export const BoxForm = (props) => {
             <TableRow className="normalRow">
               {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
             </TableRow>
-            <TableRow className="normalRow">
-              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
-            <TableRow className="normalRow">
-              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
-            <TableRow className="normalRow">
-              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
-            <TableRow className="normalRow">
-              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
-            <TableRow className="normalRow">
-              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
-            <TableRow className="normalRow">
-              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
-            <TableRow className="normalRow">
-              {props.data.map((el,i)=>(<TableCell align={i!==0?"right":"left"}  key={el}>{typeof el == "string" ? el : new Date(el).toLocaleString()}</TableCell>))}
-            </TableRow>
           </TableBody>
         </Table>
       </TableContainer>
