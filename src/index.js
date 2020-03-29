@@ -7,12 +7,8 @@ import { BoxForm } from './components/BoxForm';
 const AppStyle = styled.main`
 width: 70%;
 
-background-image: url('https://i.imgur.com/Q8ECZEy.png');
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+background-image: none;
+background-color: #f4f4f4;
 @media(max-width: 1920px){
   width:85%;
 }
