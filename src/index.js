@@ -115,7 +115,7 @@ margin-bottom: 10px;
 
 }
 `;
-const dummyData = [["Hosts",["First Name", "Last Name", "Email", "Notify"], ["Test","Name","test@test.test","Yes"],["New","Delete","Save","Cancel"]],[ "Guests",["First Name", "Last Name", "Status", "Start Date","End Date"],["Test","Name","Testing","April 2, 2020","April 17, 2020"],["New","Delete","Save","Cancel", "Add Event"]],["History",["Visitor","Date Time"],["Test Name",Date.now()]],["Contact #'s",["Authorizer","Name","Phone"],["TestAuth","TestName","5035552012"],["Delete","Save","Cancel"]],["Vendors",["Company Names","Status","Start Date","End Date"],["TestCompany","Testing","April 2, 2020","April 17, 2020"],["New","Delete","Save","Cancel"]],[ "User Accounts",["Username","Email","Notify"],["TestUser","test@test.test","Yes"],["New","Delete","Save","Cancel"]]];
+const dummyData = [["Hosts",["First Name", "Last Name", "Email", "Notify"], ["Test","Name","test@test.test","Yes"],["New","Delete","Save","Cancel"]],[ "Guests",["First Name", "Last Name", "Status", "Start Date","End Date"],["Test","Name","Testing","April 2, 2020","April 17, 2020"],["New","Delete","Save","Cancel", "Add"]],["History",["Visitor","Date Time"],["Test Name",Date.now()]],["Contact #'s",["Authorizer","Name","Phone"],["TestAuth","TestName","5035552012"],["Delete","Save","Cancel"]],["Vendors",["Company Names","Status","Start Date","End Date"],["TestCompany","Testing","April 2, 2020","April 17, 2020"],["New","Delete","Save","Cancel"]],[ "User Accounts",["Username","Email","Notify"],["TestUser","test@test.test","Yes"],["New","Delete","Save","Cancel"]]];
 const RuleStyle = {
 
 }
